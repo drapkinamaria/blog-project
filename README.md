@@ -12,11 +12,11 @@ React-приложение со списком новостей, который 
 
 #### 1. Клонируйте репозиторий
 ```
-git clone https://github.com/your_username_/Project-Name.git
+git clone https://github.com/drapkinamaria/blog-project.git
 ```
 #### 2. Перейдите в каталог проекта
 ```
-cd Project-Name
+cd blog-project
 ```
 #### 3. Установите необходимые пакеты
 ```

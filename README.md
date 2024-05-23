@@ -24,7 +24,7 @@ npm install
 ```
 #### 4. Запустите проект
 ```
-npm run dev
+npm run start
 ```
 
 ### Структура проекта

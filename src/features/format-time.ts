@@ -1,4 +1,4 @@
-export function formatEpochTime(epochTime: string) {
+export function formatEpochTime(epochTime: number) {
   const date = new Date(epochTime * 1000);
 
   const formattedDate = date.toLocaleString("en-US", {

@@ -20,3 +20,15 @@ export type NewsState = {
   isLoading: boolean;
   error: string | null;
 };
+
+export type ReplyFormProps = {
+  articleId: number;
+}
+
+export type API = {
+  get: <T>(url: string) => Promise<{ data: T }>;
+}
+
+export type ThunkExtraArgument = {
+  api: API;
+}

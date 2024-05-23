@@ -1,13 +1,14 @@
-import { useState } from "react";
+import {FormEvent, useState} from "react";
 import { useDispatch } from "react-redux";
 import { Button, Form, FormGroup, FormControl } from "react-bootstrap";
 import { addReply } from "../store/action";
+import {ReplyFormProps} from "../types/types";
 
-export default function ReplyForm({ articleId }) {
+export default function ReplyForm({ articleId }: ReplyFormProps) {
   const [reply, setReply] = useState("");
   const dispatch = useDispatch();
 
-  const handleSubmit = (event) => {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (reply.trim()) {
       dispatch(

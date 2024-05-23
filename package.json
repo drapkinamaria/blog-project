@@ -3,16 +3,18 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://drapkinamaria.github.io/blog-project",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.5",
     "axios": "^1.7.1",
     "bootstrap": "^5.3.3",
+    "gh-pages": "^6.1.1",
     "http-status-codes": "^2.3.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
